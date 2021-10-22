@@ -17,7 +17,7 @@ for ( var i=0;i<word.length;i++){
     rword = rword + letters.pop();
 }
 
-//conparing two string
+//comparing two string
 if(word === rword){
     console.log(word + " is a palindrome.");
 }else{
