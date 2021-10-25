@@ -1,6 +1,6 @@
 var letters = [] //this is our stack
 
-var word = 'recerq';
+var word = 'recer';
 
 var rword='';
 
