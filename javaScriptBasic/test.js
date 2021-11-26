@@ -9,5 +9,11 @@ let petRegex = /dog|cat|bird|fish/; // Change this line
 let result = petRegex.test(petString);
 
 console.log(result)//true
-
 // You can search for multiple patterns using the alternation or OR operator: |
+
+let myString = "freeCodeCamp";
+let fccRegex = /FREECODECAMP/i; // Change this line
+let result = fccRegex.test(myString);
+console.log(result)//true
+
+//  /.../i Ignore Case(capital or small) While Matching
