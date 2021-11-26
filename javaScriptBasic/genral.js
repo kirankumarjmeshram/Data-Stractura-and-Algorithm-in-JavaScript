@@ -13,3 +13,20 @@ const myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
 myArray.unshift(['Paul',35]);
 console.log(myArray) //o-[ [ 'Paul', 35 ], [ 'dog', 3 ] ]
+
+
+//Delete Properties from a JavaScript ObjectPassed
+
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
+  };
+  delete myDog.tails;
+  console.log(myDog) 
+  // o- { name: 'Happy Coder',
+    // legs: 4,
+    // friends: [ 'freeCodeCamp Campers' ],
+    // bark: 'woof' }
