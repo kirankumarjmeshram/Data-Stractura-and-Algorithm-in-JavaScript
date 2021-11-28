@@ -25,5 +25,13 @@ let testStr = "Repeat, Repeat, Repeat";
 let ourRegex = /Repeat/;
 testStr.match(ourRegex);//here match would return ["Repeat"].
 
-let repeatRegex = /Repeat/g;
+let repeatRegex = /Repeat/g;//To search or extract a pattern more than once, you can use the g flag.
 testStr.match(repeatRegex); //And here match returns the value ["Repeat", "Repeat", "Repeat"]
+
+//useing flag g and flag i simultanously
+
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/gi; // i Ignore Case(capital or small) While Matching
+let result = twinkleStar.match(starRegex); // Change this line
+
+console.log(result)
