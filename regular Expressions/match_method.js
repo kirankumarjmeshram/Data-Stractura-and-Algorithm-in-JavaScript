@@ -63,7 +63,17 @@ matStr.match(bgRegex);//the three match calls would return the values ["cat"], [
 let quoteSample = "The quick brown fox jumps over the lazy dog.";
 let alphabetRegex = /[a-z]/gi; // 
 let result = quoteSample.match(alphabetRegex); 
-console.log(result)
+console.log(result);
+
+
+//Match Characters that Occur One or More Times
+///a+/g would find one match in abc and return ["a"].
+// Because of the +, it would also find a single match in aabc and return ["aa"].
+
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/gi; // Change this line
+let result = difficultSpelling.match(myRegex);
+console.log(result)//[ 'ss', 'ss' ]
 
 
 //Match Single Character with Multiple Possibilities
