@@ -50,6 +50,47 @@ let result = unRegex.test(exampleStr);
 console.log(result) //return true
 
 
+//Match Single Character with Multiple Possibilities
+let bigStr = "big";
+let bagStr = "bag";
+let bugStr = "bug";
+let bogStr = "bog";
+let bgRegex = /b[aiu]g/;
+bigStr.match(bgRegex);//["big"]
+bagStr.match(bgRegex);//["bag"]
+bugStr.match(bgRegex);//["bug"]
+bogStr.match(bgRegex);//null
+
+let quoteSample =
+  "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; // Change this line
+let result = quoteSample.match(vowelRegex); // Change this line
+console.log(result)
+//return //[ 'e',
+// 'a',
+// 'e',
+// 'o',
+// 'u',
+// 'i',
+// 'e',
+// 'a',
+// 'o',
+// 'e',
+// 'o',
+// 'e',
+// 'I',
+// 'a',
+// 'e',
+// 'o',
+// 'o',
+// 'e',
+// 'i',
+// 'o',
+// 'e',
+// 'o',
+// 'i',
+// 'e',
+// 'i' ]
 
 
 
