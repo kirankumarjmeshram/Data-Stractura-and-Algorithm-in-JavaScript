@@ -34,4 +34,24 @@ let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /twinkle/gi; // i Ignore Case(capital or small) While Matching
 let result = twinkleStar.match(starRegex); // Change this line
 
-console.log(result)
+console.log(result);
+
+//Match Anything with Wildcard Period ( . )
+
+let humStr = "I'll hum a song";
+let hugStr = "Bear hug";
+let huRegex = /hu./;
+huRegex.test(humStr);
+huRegex.test(hugStr);//return true
+
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line
+let result = unRegex.test(exampleStr);
+console.log(result) //return true
+
+
+
+
+
+
+
