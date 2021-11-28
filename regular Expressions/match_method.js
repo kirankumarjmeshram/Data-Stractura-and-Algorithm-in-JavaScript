@@ -3,17 +3,27 @@
 
 //.match() extract the actual matches you found with the .match() method.
 
-// var a ="Hello, World!".match(/Hello/);
-// let ourStr = "Regular expressions";
-// let ourRegex = /expressions/;
-// ourStr.match(ourRegex);
+const paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
+const regex = /[A-Z]/g;
+const found = paragraph.match(regex);
 
-// console.log(a)
+console.log(found);
+// expected output: Array ["T", "I"]
 
-// const paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
-// const regex = /[A-Z]/g;
-// const found = paragraph.match(regex);
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/;
+let result = extractStr.match(codingRegex);
 
-// console.log(found);
-// // expected output: Array ["T", "I"]
-console.log("hii")
+console.log(result)//result 'coding'
+
+
+
+
+//To search or extract a pattern more than once, you can use the g flag
+let testStr = "Repeat, Repeat, Repeat";
+
+let ourRegex = /Repeat/;
+testStr.match(ourRegex);//here match would return ["Repeat"].
+
+let repeatRegex = /Repeat/g;
+testStr.match(repeatRegex); //And here match returns the value ["Repeat", "Repeat", "Repeat"]
