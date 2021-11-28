@@ -77,6 +77,12 @@ bagStr.match(bgRegex);//["bag"]
 bugStr.match(bgRegex);//["bug"]
 bogStr.match(bgRegex);//null
 
+
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou^0-9]/gi; 
+let result = quoteSample.match(myRegex); 
+console.log(result)//[ ' ', 'b', 'l', 'n', 'd', ' ', 'm', 'c', '.' ]
+
 let quoteSample =
   "Beware of bugs in the above code; I have only proved it correct, not tried it.";
 let vowelRegex = /[aeiou]/gi; // Change this line
