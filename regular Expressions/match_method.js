@@ -76,6 +76,13 @@ let result = difficultSpelling.match(myRegex);
 console.log(result)//[ 'ss', 'ss' ]
 
 
+
+//Match Characters that Occur One or More Times
+let chewieRegex = /change/;
+let result = chewieQuote.match(chewieRegex);
+
+
+
 //Match Single Character with Multiple Possibilities
 let bigStr = "big";
 let bagStr = "bag";
@@ -86,7 +93,6 @@ bigStr.match(bgRegex);//["big"]
 bagStr.match(bgRegex);//["bag"]
 bugStr.match(bgRegex);//["bug"]
 bogStr.match(bgRegex);//null
-
 
 let quoteSample = "3 blind mice.";
 let myRegex = /[^aeiou^0-9]/gi; 
