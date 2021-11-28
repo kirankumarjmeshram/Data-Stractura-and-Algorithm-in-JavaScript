@@ -50,6 +50,22 @@ let result = unRegex.test(exampleStr);
 console.log(result) //return true
 
 
+//Match Letters of the Alphabet
+//to match lowercase letters a through e you would use [a-e]
+let catStr = "cat";
+let batStr = "bat";
+let matStr = "mat";
+let bgRegex = /[a-e]at/;
+catStr.match(bgRegex);
+batStr.match(bgRegex);
+matStr.match(bgRegex);//the three match calls would return the values ["cat"], ["bat"], and null.
+
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // 
+let result = quoteSample.match(alphabetRegex); 
+console.log(result)
+
+
 //Match Single Character with Multiple Possibilities
 let bigStr = "big";
 let bagStr = "bag";
