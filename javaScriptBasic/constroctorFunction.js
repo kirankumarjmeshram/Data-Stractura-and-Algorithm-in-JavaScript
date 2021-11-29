@@ -13,4 +13,4 @@ function GeneralCar(givenName,givenSpeed){
 car1 = new GeneralCar('Nissan',180);
 car2 = new GeneralCar("Maruti Alto",89);
 
-console.log(car1.analyze())
+console.log(car1.analyze())//This car is slower by 20 than Porshe
