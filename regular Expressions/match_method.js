@@ -78,7 +78,7 @@ console.log(result)//[ 'ss', 'ss' ]
 
 
 //Match Characters that Occur One or More Times
-let chewieRegex = /change/;
+let chewieRegex = /Aa*/;
 let result = chewieQuote.match(chewieRegex);
 
 
