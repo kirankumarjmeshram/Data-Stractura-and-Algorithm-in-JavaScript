@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Prompt Confirm</title>
+</head>
+<body>
+    <div class="continer">
+        This is a page
+    </div>
+</body>
+</html>
+<script>
+    
+    //Alert
+    //Alert is in browser javaScript o- does not return anything
+    alert('This is a Message');
+    //return value of alert is undefined
+    //let a = alert('This is a Message') and cosole.log(a)=> undefined
+    
+    
+    //prompt
+    let name = prompt("what is your name?","defaultName");//will ask for name and defaultName will there
+    //run even we didnt give defaultName, it will show blank .
+    console.log(name); // Will return name.
+
+
+    //confirm
+    let deletePost = confirm("Do you really want to delete post?");
+    console.log(deletePost)//if we click on 'ok' it will return true and if we click on cancel it will return false.
+
+    if(deletePost){
+        console.log(" Your post is deleted succesfully");
+    }else{
+        console.log("Your post is not deleted")
+    }
+
+
+
+
+</script>
