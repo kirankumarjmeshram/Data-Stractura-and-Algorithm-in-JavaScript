@@ -5,4 +5,4 @@ function Bird(name, color) {
 }
 
 let cardinal = new Bird("Bruce", "red");
-console.log(cardinal)
+console.log(cardinal) //Bird { name: 'Bruce', color: 'red', numLegs: 2 }
