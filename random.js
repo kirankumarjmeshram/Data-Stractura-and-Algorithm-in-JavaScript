@@ -10,6 +10,7 @@
 // sign = window.prompt('Are you feeling lucky'); // open the window with Text "Are you feeling lucky"
 // sign = window.prompt('Are you feeling lucky', 'sure'); // open the window with Text "Are you feeling lucky" and default value "sure"
 
-var a = prompt('What is your name')
+//var a = prompt('What is your name')
 
-console.log(a)
+// console.log(a)
+
