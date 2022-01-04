@@ -9,10 +9,12 @@ arr2= [ 910, 1120, 1130, 1200, 1900, 2000 ];
 console.log(minPlat(6,arr1,arr2))
 
 function minPlat(n,arr,dept){
-            var platform =1;//1
-            var result =1;
-            var i =1;//arival//2
-            var j =0;//1
+    //arr1=[ 900, 940, 950, 1100, 1500, 1800 ];
+    //arr2= [ 910, 1120, 1130, 1200, 1900, 2000 ];
+          var platform =1;//0//1//2//3//2//1//0//1
+            var result =1;//1//1//2//3//3//3//3//3
+                 var i =1;//1//2//3//4//4//4//4//5
+                 var j =0;//1//1//1//1//2//3//4//4
             while(i<n && j<n){
                 if(arr[i]<=dept[j]){
                     platform++;
