@@ -1,4 +1,6 @@
-//You have a string S and its starting index is 1. The string S consists of characters from 1-9. You are asked to count the number of even numbered characters ( i.e 2,4,6,8) for every index i .
+//You have a string S and its starting index is 1. The string S consists of
+// characters from 1-9. You are asked to count the number of even numbered 
+//characters ( i.e 2,4,6,8) for every index i .
 //For an index i, the result should be calculated from i to the end of the string.
 
 //574674546476 =>7 7 7 6 5 5 4 4 3 2 1 1
