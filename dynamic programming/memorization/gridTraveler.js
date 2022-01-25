@@ -1,6 +1,6 @@
 //recursion\gridTraveler.js
 const gridTravler = (m,n,memo={})=>{
-    const key = m+","+n;
+    const key = m+","+n;        
 if(key in memo){
     return memo[key]
 }if(n===1 && n===1){
@@ -14,5 +14,5 @@ if(key in memo){
 return memo[key]
 }
 
-console.log(gridTravler(3,3))//6
-console.log(gridTravler(18,18))//2333606220
+console.log(gridTravler(2,3))//6
+//console.log(gridTravler(18,18))//2333606220
