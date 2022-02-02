@@ -16,3 +16,4 @@ const generateAllPermutations = str => {
   };
   console.log(generateAllPermutations('abc'));
   //output = [ 'abc', 'acb', 'bac', 'bca', 'cab', 'cba' ]
+  //console.log(generateAllPermutations([1,2,3]));
