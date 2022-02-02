@@ -26,7 +26,7 @@ while(current!==null){
 return sum
 }
 
-console.log(sumList(a)) //A B C D
+console.log(sumList(a)) //20
 
 
 
