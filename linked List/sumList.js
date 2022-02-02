@@ -16,7 +16,7 @@ c.next = d;
 
 //A->B->C->D->NULL
 
-const printLinkedListValues =(head)=>{
+const sumList =(head)=>{
 let sum = 0;
 let current = head;
 while(current!==null){
@@ -26,7 +26,7 @@ while(current!==null){
 return sum
 }
 
-console.log(printLinkedListValues(a)) //A B C D
+console.log(sumList(a)) //A B C D
 
 
 
