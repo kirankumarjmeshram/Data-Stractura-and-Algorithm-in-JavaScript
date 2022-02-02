@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\recursion\\canSum.js"
+            "program": "${workspaceFolder}\\linked List\\inkedListFindRecursive.js"
         }
     ]
 }

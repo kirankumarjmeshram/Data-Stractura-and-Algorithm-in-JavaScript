@@ -22,7 +22,8 @@ const linkedListFind =(head,target)=>{
  return linkedListFind(head.next,target)
 }
 
-console.log(linkedListFind(a,"C")) //A B C D
+console.log(linkedListFind(a,"C")) //true
+console.log(linkedListFind(a,"G")) //false
 
 
 
