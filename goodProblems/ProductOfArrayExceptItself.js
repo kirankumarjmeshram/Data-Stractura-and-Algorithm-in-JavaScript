@@ -1,3 +1,4 @@
+//https://practice.geeksforgeeks.org/problems/product-array-puzzle4525/1
 class Solution {
     productExceptSelf(nums,n){
       //code here
@@ -18,9 +19,9 @@ class Solution {
         for(var i=0;i<n;i++){
           newArray[i]=rightNums[i]*leftNums[i]
       }
-       console.log(newArray)
+      return newArray
     }
    
 }
-//console.log(productExceptSelf([10, 3, 5, 6, 2],5))
+console.log(productExceptSelf([10, 3, 5, 6, 2],5))
 
