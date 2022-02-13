@@ -25,20 +25,24 @@ c.right=f;
 //   / \   \
 //  d   e   f
 
-const breadthFirstValues=(root)=>{
-       if(root===null) return [];
 
-       const ans =[];
-       const queue =[root];
+const treeInclude=(root,target)=>{
+    if(root===null) return false;
+    const queue =[root];
 
-       while(queue.length>0){
-           const current=queue.shift();
-           ans.push(current.val);
+    while(queue.length>0){
+        const current=queue.shift();
+        if(current.val===target) return true;
 
-           if(current.left!==null) queue.push(current.left);
-           if(current.right!==null) queue.push(current.right)
-       }
-       return ans;
+        if(current.left!==null) queue.push(current.left);
+        if(current.right!==null) queue.push(current.right)
+    }
+    return false;
 }
 
-console.log(breadthFirstValues(a))//[ 'a', 'b', 'c', 'd', 'e', 'f' ]
+console.log(treeInclude(a,"e"))//true
+console.log(treeInclude(a,"z"))//
+
+
+
+

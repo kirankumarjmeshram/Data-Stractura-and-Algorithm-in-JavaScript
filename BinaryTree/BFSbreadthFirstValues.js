@@ -25,19 +25,19 @@ c.right=f;
 //   / \   \
 //  d   e   f
 
-const breadthFirstValues=(root,target)=>{
-       if(root===null) return false;
-       const queue =[root];
+const breadthFirstSearch=(root)=>{
+    if(root===null) return [];
 
-       while(queue.length>0){
-           const current=queue.shift();
-           if(current.val===target) return true;
+    const ans =[];
+    const queue =[root];
 
-           if(current.left!==null) queue.push(current.left);
-           if(current.right!==null) queue.push(current.right)
-       }
-       return false;
+    while(queue.length>0){
+        const current=queue.shift();
+        ans.push(current.val);
+
+        if(current.left!==null) queue.push(current.left);
+        if(current.right!==null) queue.push(current.right)
+    }
+    return ans;
 }
-
-console.log(breadthFirstValues(a,"e"))//true
-console.log(breadthFirstValues(a,"z"))//
+console.log(breadthFirstSearch(a))//[ 'a', 'b', 'c', 'd', 'e', 'f' ]
