@@ -14,3 +14,8 @@
 
 // console.log(a)
 
+var ip = '192.168.0.1'
+ip=ip.split(".").map(Number);
+//n=ip.split("").length
+
+console.log(ip)
