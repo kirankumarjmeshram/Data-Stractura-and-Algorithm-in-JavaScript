@@ -40,4 +40,4 @@ const breadthFirstValues=(root,target)=>{
 }
 
 console.log(breadthFirstValues(a,"e"))//true
-console.log(breadthFirstValues(a,"z"))//false
+console.log(breadthFirstValues(a,"z"))//
