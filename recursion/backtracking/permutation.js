@@ -27,3 +27,4 @@ function swap(i,j,array){
 console.log(getPermutation([1,2,3]))//output=>[ [ 1, 2, 3 ],[ 1, 3, 2 ], [ 2, 1, 3 ],[ 2, 3, 1 ][ 3, 2, 1 ],[ 3, 1, 2 ]]
 
 console.log(getPermutation(["a","b"]))//output=>[ [ 'a', 'b' ], [ 'b', 'a' ] ]
+console.log(getPermutation('abc'))
