@@ -17,3 +17,22 @@
 // var ip = '192.168.0.1'
 // ip=ip.split(".").map(Number);
 // //n=ip.split("").length
+// let str =['a',...'eiocxgnb','u'];
+// console.log(str)
+
+// const user ={
+//     "name":'a',
+//     "b":"uy",
+//     'v':23
+// }
+// const {name,...rest} = user;
+// console.log(name,...rest)
+
+let  a=6
+    a=7
+function abc(){
+  console.log(a)
+}
+// const b=a*4
+ console.log(a)
+//abc()
