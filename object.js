@@ -15,4 +15,15 @@ for (const i of Object.values(obj)){
     }
 }
 
+for (const [key,value] of Object.entries(obj)){
+   console.log(`${key}=>${value}`)
+    }
+
 console.log(max)
+// [ 6, 3, 9 ]
+// [ 'a', 'b', 'c' ]
+// [ [ 'a', 6 ], [ 'b', 3 ], [ 'c', 9 ] ]
+// a=6
+// b=3
+// c=9
+// 9
