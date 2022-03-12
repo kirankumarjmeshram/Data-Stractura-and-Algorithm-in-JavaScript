@@ -1,15 +1,11 @@
 
 //Sum All Numbers in a Range
 function sumAll(arr) {
-    var sum =0; 
-    var start = Math.min(...arr);
-    var end = Math.max(...arr);
-  
-    for(var i=start;i<=end;i++){
-      sum +=i;
-  
-    }
-    return sum;
+  let sum = 0;
+  for (let i = Math.min(...arr); i <= Math.max(...arr); i++) {
+    sum += i;
   }
-  
-  sumAll([1, 4]);//10
+  return sum;
+}
+
+console.log(sumAll([1, 4])); //10
