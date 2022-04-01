@@ -1,0 +1,472 @@
+a hash-table is used to implement
+
+associative arrays or mappings of key
+
+value pairs hash tables are a common way
+
+to implement the map data structure or
+
+objects they are widely used because of
+
+how efficient they are the average time
+
+for each lookup is not tied to the
+
+number of elements stored in the table
+
+in fact the average time complexity of
+
+hash tables and big notation is o of 1
+
+for a search insert and delete that's
+
+very fast the way a hash table works is
+
+that it takes a key input and then runs
+
+it through a hash function a hash
+
+function basically just Maps strings to
+
+numbers and usually the numbers just
+
+correspond to indexes in an array so for
+
+example here are the strings we pass
+
+through the hash function and then we
+
+get the numbers over here a hash
+
+function needs to be consistent so when
+
+you run a key through the hash function
+
+it always gives the same number and it
+
+should map different words to different
+
+numbers if two words get hashed to the
+
+same number this is called a collision
+
+you can see in this example John Smith
+
+gets hashed to two Lisa Smith gets
+
+hashed to what was either one Sam dofor
+
+and then Sandra D also gets hashed to
+
+two so this is a collision because both
+
+these names once they run through the
+
+hash function get turned into the same
+
+number or the same index for the array
+
+one way to handle collisions is just to
+
+store both key value pairs at that index
+
+then upon lookup of either you would
+
+have to iterate through the bucket of
+
+items to find the key you are looking
+
+for this could take a little extra time
+
+because of the iteration so here's
+
+another example where it's showing that
+
+the names are going through the hash
+
+function and then it's showing basically
+
+the information that's being stored in
+
+the bucket so this would be the array
+
+index and then in that array index or
+
+the bucket we would store the phone
+
+number so this would be like a phone
+
+book the numerical value from the hash
+
+function is then you
+
+and the index to store that information
+
+then if you try to access the same key
+
+again the hashing function will process
+
+the key and return the same numerical
+
+result which will then be used to look
+
+up the associate value which just means
+
+that once you store all these things in
+
+the array once you want to get the
+
+number again you would just pass in the
+
+key John Smith into the hash function it
+
+would give you the exact same array
+
+index too and then you would get the
+
+information returned to you which is the
+
+phone number
+
+now you will probably never have to
+
+implement hash tables yourself because
+
+most languages including Java Script
+
+already have them built-in in JavaScript
+
+hash tables are usually used to
+
+implement objects however it can be
+
+helpful to see how they are implemented
+
+just to gain a better understanding so
+
+I'm going to show you the code for a
+
+hash table so you can see how they work
+
+first of all we have our hash function
+
+where we're gonna pass in the string
+
+that we want to hash and then the Max
+
+Max is the number of buckets that we're
+
+using in our hash table to store values
+
+we're gonna start with hash being 0 and
+
+we are going to for each character in
+
+the string string that length for as
+
+long as the string is we are going to
+
+add the care code of each character each
+
+string character has a numerical value
+
+associated with it so basically we're
+
+just adding up the character codes for
+
+each character in the string and putting
+
+into the hash now instead of returning
+
+the hash we're gonna return hash modulus
+
+maths that just means we are going to
+
+divide by the number of buckets and then
+
+return the remainder so if we had 5
+
+buckets if we're divided by 5 the
+
+remainder is either there going to be 0
+
+1 2 3 or 4 and then that would be the
+
+index that we're going to place the item
+
+into the array now this is a very simple
+
+hash function just for an example but
+
+they can get much more complicated now
+
+let's go into the hash table function so
+
+in the hash table function we're gonna
+
+have our storage array which is where
+
+we're gonna store all that data we're
+
+putting
+
+to it and the storage limit now this is
+
+the number of buckets in the array at
+
+first I'm just gonna show you with just
+
+four different buckets but normally
+
+actually this number would be much
+
+higher and this is just a utility
+
+function just for this example so I can
+
+easily print all the items in this
+
+storage array I can easily log them so
+
+here's where the real methods come in
+
+for the hash table if we want to add
+
+some information so first you're gonna
+
+pass in a key and a value we're gonna
+
+figure out the index of the array by
+
+running it through the hash function so
+
+we create this hash function where we're
+
+gonna pass in the key and the storage
+
+limit the number of buckets that we're
+
+gonna have in our hash table and that's
+
+going to return an index that we went
+
+over before if there's nothing in that
+
+index in the storage array if it's
+
+undefined we're just going to set the
+
+index to be this key value pair array
+
+else if it's not undefined that means
+
+there's already something in that bucket
+
+so first we're gonna set insert it to
+
+false and then we're gonna go through
+
+each index to see if the key already
+
+exists if the key already exists we're
+
+gonna set the new value here and set
+
+insert the true if the key does not
+
+exist then insert is still gonna be
+
+equal to false so we're going to push in
+
+the new item that's where we'll get
+
+multiple entries into one bucket so the
+
+next thing is if we're going to remove
+
+an item from the hash table so if we're
+
+gonna remove you're just passing the key
+
+of what you want to remove and now we're
+
+gonna look up the index by passing it
+
+into the hash function if the index that
+
+length equals one that means there's
+
+only going to be one item in that bucket
+
+and the item in that bucket equals the
+
+key that you passed in then you can just
+
+delete that index you can just sleep
+
+that item
+
+but if it does not equal one that means
+
+there's probably a few different items
+
+at that index and we want to only delete
+
+the item associated with that key so
+
+we're going to go through each item in
+
+that bucket or in the
+
+next and if the key equals the key we
+
+passed in then we can delete that item
+
+the zero index is the key the one index
+
+is the value so let's go how we would
+
+look up an item again we're gonna set
+
+the index using our hash function with
+
+the key that we passed in and the
+
+storage limit if the index there is
+
+undefined we just return undefined it's
+
+not the item is not in the hash table
+
+else we're going to go through each
+
+element in that bucket if the element
+
+equals the key then we can return that
+
+element so let's look at a few examples
+
+first I'm going to show you an example
+
+of the hash function here if we run that
+
+for me three and every time I run that
+
+you'll see in the console three three
+
+three every time I put Bo it's gonna put
+
+three but if I put a different name here
+
+and I run that you can see on the
+
+console it's gonna be five and now every
+
+time I run that's gonna be five so with
+
+this hash function it's going to always
+
+be a number between zero and nine
+
+because we're passing in ten as the
+
+number of buckets so now let's actually
+
+see the hash table so here we're gonna
+
+create a new hash table called hte for a
+
+hash table we're gonna add Bo who's a
+
+person and find out it was a dog retsu
+
+the dinosaur tux who's a penguin then
+
+we're gonna look up tux and then we're
+
+just gonna print the entire thing so
+
+let's see what happens in the console so
+
+we saw that tux is a penguin now let me
+
+bring this over a little bit it's going
+
+to show our entire half state well not
+
+normally you're never gonna print out
+
+the hash table like I did to the console
+
+but I just did that just for learning
+
+purposes if you remember up here we have
+
+the storage limit set up for so we only
+
+have four buckets the reason why I had
+
+it set up for is so we'll see what it
+
+looks like when there's a collision when
+
+there's two things in one bucket just by
+
+coincidence the first buck is undefined
+
+that means none of these words hashed to
+
+zero and then if we look at the second
+
+bucket that's right here there's
+
+actually two key value pairs
+
+in the second bucket so both bow and tux
+
+both gave one when it went through the
+
+hash function and then you can see in
+
+this bucket right here
+
+we just have one item and then this
+
+bucket right here we just have one item
+
+so when we pass in Rex to the hash
+
+function we got three returned but if we
+
+go up here and we change the number of
+
+buckets to something like 14 now I'm
+
+gonna try running that again if you look
+
+right here now there's a lot more
+
+undefined because most of the buckets
+
+are now empty but this bucket only has
+
+one item that bug is one item and then
+
+the last two bucks have one item and
+
+there are no collisions now each bucket
+
+only has one item now this has just been
+
+a pretty simple example of a hash table
+
+implementation but it's enough to give
+
+you a basic idea of the hash table
+
+thanks for watching my name is Bo Carnes
+
+don't forget to subscribe and remember
+
+use your code for good
+
