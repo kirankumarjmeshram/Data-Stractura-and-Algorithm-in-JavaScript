@@ -4,6 +4,9 @@ let heights = [0,8,0,0,5,0,0,10,0,0,1,1,0,3];
 
 function waterArea(heights){
     let n = heights.length;
+    if(n==0){
+		return 0
+	}
     let maxLeft =0;
     let maxRight=0
     let leftMaxHeights=[];
