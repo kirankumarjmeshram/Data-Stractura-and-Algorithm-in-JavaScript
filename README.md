@@ -1,0 +1,100 @@
+Javascript Topics:
+
+- primitives data types
+- variables, string, numbers, booleans, undefined, null, NaN
+- arithmetic operators
+- comparison operators
+- logical operators
+- conditional statements (if else, switch)
+- functions, arguments, return statement, scope
+- callbacks, higher order functions
+- for loops, while, do while
+- Arrays
+    - declaration
+    - accessing items
+    - assignment
+    - Array methods
+    - 2D array
+    - 3D array
+    - forEach, map, reduce, filter callbacks
+- Objects
+    - difference from arrays
+    - key value pair
+    - accessing values
+    - assigning values
+    - methods
+    - for in loop
+    - this
+- hoisting
+- scopes
+    - global
+    - local scope
+    - block scope
+- closures
+- lexical scoping
+- Execution context
+- strict mode
+- solve problems faster by using objects 
+- recursion
+- DOM manipulation 
+    - createElement
+    - append
+    - getElementById
+    - querySelector
+    - querySelectorAll
+    - setAttribute
+    - children methods
+- event API, eventListener
+- event bubbling
+- event capturing
+- style and attribute manipulation with DOM
+- JSON
+- using AJAX / XHR
+- callback, callback hell
+- asyncrnonous behavior in javascript
+    - setTimeout
+    - setInterval
+- event loop
+    - call stack
+    - task/event queue
+- WEB API
+- promises
+    - promise chaining
+    - advantage over callbacks
+- async, await
+- fetch API
+- axios
+- CORS
+- jQuery
+- IIFE
+- anonymous functions
+- Sets, Map
+- modules
+- localStorage, cookie, sessionStorage
+- ECMAScript, TC39
+- polyfill
+- tree shaking
+- HTTP protocols
+- Implementation of Stacks, Queues, Linked List, Trees (Binary Tree, Nary Tree), Graphs
+- Traversing, reversing, mirror, and other operations for LinkedList, Trees, Graphs (1st, 2nd, 3rd level)
+
+
+ES6 and others:
+
+- var let const
+- arrow functions
+- template literals
+- destructuring
+- default params
+- event loop
+- promises, async, await, fetch, axios
+- classes
+- this
+- inheritance, and prototype
+- call apply bind
+- getters
+- setters
+- generators
+- yield
+- BigInt
+- Optional Chaining
