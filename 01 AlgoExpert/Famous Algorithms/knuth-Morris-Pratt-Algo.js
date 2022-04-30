@@ -1,0 +1,3 @@
+const kmpAlgorithm = (string , sunstring) => {
+
+}
