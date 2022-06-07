@@ -1,4 +1,4 @@
-// https://www.geeksforgeeks.org/trapping-rain-water/
+//https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1
 function findWater(arr,n){
 let leftArr = new Array(n);
 let rightArr  = new Array(n);
