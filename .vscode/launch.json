@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
 
+
         {
             "type": "pwa-node",
             "request": "launch",
@@ -12,7 +13,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\graph\\hasPathBFS.js"
+            "program": "${workspaceFolder}\\01 AlgoExpert\\Recursion\\permutation.js"
         }
     ]
 }
