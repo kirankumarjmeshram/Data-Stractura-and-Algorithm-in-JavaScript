@@ -12,3 +12,22 @@ class Solution
         }
     }
 }
+
+// Second Way
+
+// class Solution
+// {
+//     // complete the function
+//     public static int digitalRoot(int n)
+//     {
+//         // add your code here
+//         if(n==0){
+//             return 0;
+//         }
+//         if(n%9 == 0){
+//             return 9;
+//         }else{
+//         return (n%9);
+//         }
+//     }
+// }
