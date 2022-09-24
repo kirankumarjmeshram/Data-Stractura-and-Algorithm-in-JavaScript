@@ -28,6 +28,23 @@ class BST {
     }
     return this;
   }
+//other way to write insert using this only
+
+// insert(value) {
+//   if (value < this.value) {
+//     if (this.left === null) {
+//       this.left = new BST(value);
+//     } else {
+//       this.left.insert(value);
+//     }
+//   } else {
+//     if (this.right === null) {
+//       this.right = new BST(value);
+//     } else {
+//       this.right.insert(value);
+//     }
+//   }
+// }
 
   contains(value) {
     // Write your code here.
