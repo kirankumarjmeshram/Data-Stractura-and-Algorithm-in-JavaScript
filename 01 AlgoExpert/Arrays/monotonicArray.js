@@ -3,10 +3,14 @@ function isMonotonic(array) {
     let increasing = true;
     let decreasing = true;
   
-    for(let i=0; i<array.length;i++){
+    // for(let i=0; i<array.length;i++){
+    //   if(array[i] > array[i+1]) increasing =false;
+    // }
+    // for(let i=0; i<array.length;i++){
+    //   if(array[i] < array[i+1]) decreasing =false;
+    // }
+   for(let i=0; i<array.length;i++){
       if(array[i] > array[i+1]) increasing =false;
-    }
-    for(let i=0; i<array.length;i++){
       if(array[i] < array[i+1]) decreasing =false;
     }
   
