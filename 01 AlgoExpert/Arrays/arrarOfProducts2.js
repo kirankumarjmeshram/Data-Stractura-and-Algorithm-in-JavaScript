@@ -14,3 +14,7 @@ function arrayOfProducts(array) {
     }
     return ans;
   }
+
+  console.log(arrayOfProducts([
+    1,  2,  3,  4,  5
+ ]))
