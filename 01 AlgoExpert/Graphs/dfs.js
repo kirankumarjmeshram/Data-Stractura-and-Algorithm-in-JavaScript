@@ -24,6 +24,7 @@ class Node {
 
   // breadthFirstSearch(array) {
   //   // Write your code here.
+  //   // here array = [];
   //   const queue = [this];
   //   while(queue.length > 0){
   //     const current = queue.shift();
