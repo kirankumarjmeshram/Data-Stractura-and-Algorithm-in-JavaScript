@@ -8,7 +8,7 @@ class Node {
       this.children.push(new Node(name));
       return this;
     }
-  
+  //using recursion
     depthFirstSearch(array) {
       //here array = [];
       console.log(array)
