@@ -6,7 +6,7 @@ class BinaryTree {
       this.parent = null;
     }
   }
-  
+  //O(n) time and O(n) space;
   function findSuccessor(tree, node) {
     // Write your code here.
     const inOrderTraversalOrder = getInOrderTraversalOrder(tree);
