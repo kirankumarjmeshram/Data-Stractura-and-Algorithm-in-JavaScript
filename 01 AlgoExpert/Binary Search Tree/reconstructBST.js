@@ -5,7 +5,7 @@ class BST {
       this.right = right;
     }
   }
-  
+  // O(n^2) Time && O(n) space
   function reconstructBst(preOrderTraversalValues) {
     // Write your code here.
     if(preOrderTraversalValues.length === 0) return null;
