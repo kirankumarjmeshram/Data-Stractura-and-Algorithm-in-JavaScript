@@ -15,7 +15,7 @@ function forumParking(k, arrivalT, departureT){
 
 console.log(forumParking(1,[1,3,5], [2,6,8]))
 
-check for this case 
+//check for this case 
 // 4
 // 4 3 6 7 11
 // 9 4 10 9 14
