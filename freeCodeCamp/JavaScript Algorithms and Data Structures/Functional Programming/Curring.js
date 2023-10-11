@@ -12,16 +12,16 @@ function add(x) {
   console.log(add(10)(20)(30));//60
 
 
-  function unCurried(x, y) {
-    return x + y;
-  }
+//   function unCurried(x, y) {
+//     return x + y;
+//   }
   
-  function curried(x) {
-    return function(y) {
-      return x + y;
-    }
-  }
+//   function curried(x) {
+//     return function(y) {
+//       return x + y;
+//     }
+//   }
   
-  const curried = x => y => x + y
+//   const curried = x => y => x + y
   
-  curried(1)(2)//3
+//   curried(1)(2)//3
