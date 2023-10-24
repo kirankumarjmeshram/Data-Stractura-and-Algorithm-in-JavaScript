@@ -21,3 +21,6 @@ function numberOfWaysToTraverseGraph(width, height) {
     return numberOfWays[height][width];
   }
   
+  console.log(numberOfWaysToTraverseGraph(4,3)) //10
+
+  
