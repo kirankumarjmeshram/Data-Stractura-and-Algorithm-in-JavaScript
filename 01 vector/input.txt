@@ -1,0 +1,15 @@
+input = 
+2
+4
+1 2 3 4
+5
+-1 1 0 3 -3
+
+input = input.trim().split("\n");
+    let t = +input[0];
+    let line = 1;
+    for(let i=0;i<t;i++){
+        let n = +input[line++];
+        let arr = input[line++].split(" ").map(Number);
+        console.log(productOfArr(n, arr))
+    }
