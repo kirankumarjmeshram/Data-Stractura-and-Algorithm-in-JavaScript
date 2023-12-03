@@ -11,5 +11,5 @@ input = input.trim().split("\n");
     for(let i=0;i<t;i++){
         let n = +input[line++];
         let arr = input[line++].split(" ").map(Number);
-        console.log(productOfArr(n, arr))
+        console.log(productOfArr(n, arr));
     }
