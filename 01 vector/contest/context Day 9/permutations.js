@@ -1,7 +1,7 @@
 function generatePermutation(n, arr){
     let permutations = [];
     permutationHelper(0,n,arr,permutations);
-    // return permutations;
+    permutations = permutations.sort();
     for(let i=0;i<permutations.length;i++){
         console.log(permutations[i].join(" "));
     }

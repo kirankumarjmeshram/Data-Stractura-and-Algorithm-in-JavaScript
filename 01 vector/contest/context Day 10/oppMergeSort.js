@@ -27,7 +27,8 @@ function  merge(array, l, m, r){
     let k = l;
 
     while(i<n1 && j<n2){
-        if(L[i] > R[j]){
+        // if(L[i] <= R[j]){ // for MErge sort in asending
+        if(L[i] > R[j]){  // for desending order
             array[k] =L[i];
             i++
         }else{
