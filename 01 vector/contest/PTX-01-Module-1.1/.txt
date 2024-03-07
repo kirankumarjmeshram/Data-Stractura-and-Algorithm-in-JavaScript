@@ -1,0 +1,7 @@
+https://leetcode.com/problems/binary-search/ 
+https://leetcode.com/problems/search-in-a-binary-search-tree/ 
+https://leetcode.com/problems/validate-binary-search-tree/ 
+https://leetcode.com/problems/kth-smallest-element-in-a-bst/ 
+https://leetcode.com/problems/unique-binary-search-trees/
+https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/
+https://leetcode.com/problems/convert-bst-to-greater-tree/description/
