@@ -1,5 +1,25 @@
+// tomorrow
+
+// $
+// $$
+// $$$
+// $$$$
+let str = "tomorrowoppo";
+str = str.split("");
+let ans ='';
 let count = 0;
-for(let i=0;i<10000000000;i++){
-    count++;
+function addO(count){
+    for(let i=0;i<=count;i++){
+        ans+='$'
+    }
 }
-console.log(count);
+for(let i=0;i<str.length;i++){
+    if(str[i]==='o'){
+        addO(count);
+        // console.log(count)
+        count++;
+    }else{
+        ans+=str[i]
+    }
+}
+console.log(ans)
