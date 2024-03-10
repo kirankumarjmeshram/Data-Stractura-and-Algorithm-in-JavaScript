@@ -9,11 +9,13 @@ const fib =(n,memo={})=>{
         return 1
     }else{
         memo[n] = fib(n-1,memo)+fib(n-2,memo)
+        console.log(memo)
+        
     }
     return memo[n];
 }
 
 console.log(fib(6,{}));//8
-console.log(fib(10,{}));//55
-console.log(fib(50,{}))
-console.log(fib(100,{}));//354224848179262000000
+// console.log(fib(10,{}));//55
+// console.log(fib(50,{}))
+// console.log(fib(100,{}));//354224848179262000000
