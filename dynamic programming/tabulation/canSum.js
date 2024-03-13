@@ -1,10 +1,10 @@
 function canSum(targetSum, numbers){
     let table = new Array(targetSum+1).fill(false);
     table[0] = true;
-    for(let num of numbers){
-        table[num] = true;
-    }
-    for(let i=1;i<=targetSum;i++){
+    // for(let num of numbers){
+    //     table[num] = true;
+    // }
+    for(let i=0;i<=targetSum;i++){
         if(table[i]=== true){
             for(let num of numbers){
                 table[i+num] = true;
