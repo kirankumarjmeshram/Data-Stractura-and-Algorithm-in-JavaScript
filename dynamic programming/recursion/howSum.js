@@ -13,4 +13,4 @@ function howSum(targetSum, numbers){
     }
     return null
 }
-console.log(howSum(50,[2,6,3]))
+console.log(howSum(701,[2,6,8]))
