@@ -3,3 +3,6 @@ https://leetcode.com/problems/house-robber/description/
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/ 
 https://leetcode.com/problems/decode-ways/description/
 https://leetcode.com/problems/min-cost-climbing-stairs/description/
+
+
+A substring is exactly the same thing as a subarray but in the context of strings.

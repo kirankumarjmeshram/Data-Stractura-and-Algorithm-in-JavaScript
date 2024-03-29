@@ -1,0 +1,7 @@
+https://leetcode.com/problems/combination-sum-iv/ 
+https://leetcode.com/problems/partition-equal-subset-sum/ 
+https://leetcode.com/problems/minimum-cost-for-tickets/ 
+https://leetcode.com/problems/shopping-offers/  
+https://leetcode.com/problems/delete-and-earn/description/ 
+https://leetcode.com/problems/jump-game-vi/description/ 
+https://leetcode.com/problems/dungeon-game/
