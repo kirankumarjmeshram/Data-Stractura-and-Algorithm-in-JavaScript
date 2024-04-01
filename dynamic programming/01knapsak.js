@@ -1,6 +1,4 @@
 
-
-
 function stealAsMuch(w,n,vals,wts){
     let newArr= new Array(n+1);
 

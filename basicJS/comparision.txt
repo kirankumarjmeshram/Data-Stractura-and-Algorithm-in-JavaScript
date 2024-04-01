@@ -1,0 +1,16 @@
+String Comparison:
+    In JavaScript, when you compare strings using the greater-than (>) or less-than (<) operators, it performs a lexicographic (dictionary) comparison based on the Unicode values of the characters.
+    Each character has a corresponding Unicode value, and the comparison is done character by character.
+Character Comparison:
+    In your example, '2' and '0' are both strings.
+    The Unicode value for '2' is greater than the Unicode value for '0'.
+    Therefore, when comparing '2' and '0', JavaScript considers '2' to be greater.
+Type Conversion:
+    The === operator (strict equality) checks both the value and the type of the operands.
+    Since '2' and '0' are strings, the strict equality comparison ('2' === '0') evaluates to false.
+    However, the > operator performs type conversion.
+    When comparing '2' and '0', JavaScript converts them to numbers (since they represent numeric values) and then compares their numeric values.
+    The numeric value of '2' is greater than that of '0', resulting in true.
+Comparison Results:
+    '2' > '0' evaluates to true because the Unicode value of '2' is greater than that of '0'.
+    '2' === '0' evaluates to false because strict equality checks both value and type.
