@@ -14,3 +14,19 @@ var wordBreak = function(s, wordDict) {
     }
     return dp[0];
 };
+
+
+// recursive
+var wordBreak = function(s, wordDict) {
+    if(s.length === 0){
+        return true
+    }
+    for(let word of wordDict){
+        if(s.startsWith(word)){
+            if(wordBreak(s.slice(word.length), wordDict)){
+                return true
+            }
+        }
+    }
+    return false;
+}
