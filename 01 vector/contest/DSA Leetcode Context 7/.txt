@@ -1,0 +1,7 @@
+https://leetcode.com/problems/house-robber-iii/description/ 
+https://leetcode.com/problems/evaluate-division/ 
+https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/ 
+https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/description/ 
+https://leetcode.com/problems/parallel-courses-ii/ 
+https://leetcode.com/problems/minimize-the-total-price-of-the-trips/description/ 
+https://leetcode.com/problems/sum-of-distances-in-tree/description/

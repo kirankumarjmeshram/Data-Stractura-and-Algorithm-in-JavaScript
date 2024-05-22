@@ -1,0 +1,4 @@
+https://leetcode.com/problems/range-sum-query-mutable/description/
+https://leetcode.com/problems/range-frequency-queries/description/
+https://leetcode.com/problems/range-module/description/
+https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/
