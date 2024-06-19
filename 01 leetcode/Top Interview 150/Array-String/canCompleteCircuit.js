@@ -20,3 +20,5 @@ var canCompleteCircuit = function(gas, cost) {
     }
     return totalGas>=0?startingIdx:-1;
 };
+
+
