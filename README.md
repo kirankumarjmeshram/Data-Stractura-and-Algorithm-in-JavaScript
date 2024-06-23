@@ -1,5 +1,8 @@
-Javascript Topics:
+### DSA Questions 
+LeetCode
+[LinkedList](https://leetcode.com/tag/linked-list/)
 
+Javascript Topics:
 - primitives data types
 - variables, string, numbers, booleans, undefined, null, NaN
 - arithmetic operators
