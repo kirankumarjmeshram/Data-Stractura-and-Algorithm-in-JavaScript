@@ -1,30 +1,44 @@
-// tomorrow
+class BankAccount {
+    #accountNumber;
+    #balance;
+    #accountHolderName;
 
-// $
-// $$
-// $$$
-// $$$$
-// let str = "tomorrowoppo";
-// str = str.split("");
-// let ans ='';
-// let count = 0;
-// function addO(count){
-//     for(let i=0;i<=count;i++){
-//         ans+='$'
-//     }
-// }
-// for(let i=0;i<str.length;i++){
-//     if(str[i]==='o'){
-//         addO(count);
-//         // console.log(count)
-//         count++;
-//     }else{
-//         ans+=str[i]
-//     }
-// }
-// console.log(ans)
+    set accountNumber(value) {
+        this.#accountNumber = value;
+    }
 
+    get accountNumber() {
+        return this.#accountNumber;
+    }
 
-console.log('2'>'0')
-let num = 0;
-console.log(num.charCodeAt(0))
+    set balance(value) {
+        this.#balance = value;
+    }
+
+    get balance() {
+        return this.#balance;
+    }
+
+    set accountHolderName(value) {
+        this.#accountHolderName = value;
+    }
+
+    get accountHolderName() {
+        return this.#accountHolderName;
+    }
+
+    displayDetails() {
+        console.log(`Account Number: ${this.#accountNumber}, Account Holder: ${this.#accountHolderName}, Balance: ${this.#balance}`);
+    }
+}
+
+function main() {
+    const account = new BankAccount();
+    account.accountNumber = "123456789";
+    account.balance = 5000;
+    account.accountHolderName = "John Doe";
+
+    console.log(account.balance) ;
+}
+
+main();
