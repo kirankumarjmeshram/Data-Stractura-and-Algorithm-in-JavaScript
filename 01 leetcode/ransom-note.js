@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/ransom-note/description/?envType=study-plan-v2&envId=top-interview-150
 function ransomeNote(m,n,magzine,note){
     magzine = magzine.sort();
     note = note.sort();
@@ -15,6 +16,5 @@ function ransomeNote(m,n,magzine,note){
     if(j==n){
         return "Yes"
     }
-    return "No"
-    
+    return "No"   
 }
