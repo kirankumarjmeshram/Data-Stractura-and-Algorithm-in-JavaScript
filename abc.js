@@ -1,44 +1,16 @@
-class BankAccount {
-    #accountNumber;
-    #balance;
-    #accountHolderName;
-
-    set accountNumber(value) {
-        this.#accountNumber = value;
+class Abc {
+    fun(){
+        console.log("Fun!");
     }
-
-    get accountNumber() {
-        return this.#accountNumber;
+    bun(){
+        console.log("Bun!");
     }
-
-    set balance(value) {
-        this.#balance = value;
+    static mon(){
+        console.log("Static mon")
     }
-
-    get balance() {
-        return this.#balance;
-    }
-
-    set accountHolderName(value) {
-        this.#accountHolderName = value;
-    }
-
-    get accountHolderName() {
-        return this.#accountHolderName;
-    }
-
-    displayDetails() {
-        console.log(`Account Number: ${this.#accountNumber}, Account Holder: ${this.#accountHolderName}, Balance: ${this.#balance}`);
+    static son(){
+        console.log("Static son");
     }
 }
 
-function main() {
-    const account = new BankAccount();
-    account.accountNumber = "123456789";
-    account.balance = 5000;
-    account.accountHolderName = "John Doe";
-
-    console.log(account.balance) ;
-}
-
-main();
+module.exports = Abc
