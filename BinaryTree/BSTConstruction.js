@@ -85,6 +85,25 @@ class BST {
     return false;
   }
 
+  isPresentBFS(data) {
+    const treeIncludes = function (node, data) {
+        if(node === null) {
+            return false;
+        }
+        let queue = [node];
+        while(queue.length !== 0) {
+            let curr = queue.shift();
+            if(curr.data === data){
+                return true;
+            }
+            if(curr.left !== null) queue.push(curr.left);
+            if(curr.right !== null) queue.push(curr.right);
+        }
+        return false;
+    }
+    return treeIncludes(this.root, data);
+  }
+
   remove(data) {
     const removeNode = function (node, data) {
       if (node === null) {
@@ -139,5 +158,6 @@ bst1.add(5);
 console.log(bst1.findMin()); //5
 console.log(bst1.findMax()); //13212
 console.log(bst1.isPresent(130)); //true
+console.log(bst1.isPresentBFS(130))//true
 bst1.remove(130)
-console.log(bst1.isPresent(130)); //false
+console.log(bst1.isPresentBFS(130)); //false
