@@ -86,7 +86,7 @@ class BST {
   }
 
   isPresentBFS(data) {
-    const treeIncludes = function (node, data) {
+    const BFS = function (node, data) {
         if(node === null) {
             return false;
         }
@@ -101,7 +101,22 @@ class BST {
         }
         return false;
     }
-    return treeIncludes(this.root, data);
+    return BFS(this.root, data);
+  }
+
+  isPresentDFS(data) {
+    const DFS = function (node, data) {
+        if(node === null) return false;
+        let stack = [node];
+        while(stack.length !==0) {
+            let curr = stack.pop();
+            if(curr.data === data) return true;
+            if(curr.right !== null) stack.push(curr.right);
+            if(curr.left !== null) stack.push(curr.left);
+        }
+        return false;
+    }
+    return DFS(this.root, data);
   }
 
   remove(data) {
@@ -159,5 +174,7 @@ console.log(bst1.findMin()); //5
 console.log(bst1.findMax()); //13212
 console.log(bst1.isPresent(130)); //true
 console.log(bst1.isPresentBFS(130))//true
+console.log("DFS "+bst1.isPresentDFS(130))
 bst1.remove(130)
-console.log(bst1.isPresentBFS(130)); //false
+console.log(bst1.isPresentBFS(130))//false
+console.log("DFS "+bst1.isPresentDFS(130))
