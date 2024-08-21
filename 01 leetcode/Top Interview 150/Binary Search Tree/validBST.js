@@ -17,6 +17,6 @@ var isValidBST = function(root) {
 
 function isValidHelper(root, min, max){
     if(root === null) return true;
-    if(root.val < min ||root.val > max) return false;
+    if(root.val <= min ||root.val >= max) return false;
     return isValidHelper(root.left, min, root.val) && isValidHelper(root.right, root.val, max) 
 }
