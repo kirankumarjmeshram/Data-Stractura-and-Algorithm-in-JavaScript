@@ -27,3 +27,20 @@ function inorderTraversal(root,arr) {
     arr.push(root.val);
     inorderTraversal(root.right,arr)
 }
+
+// Solution 2
+var kthSmallest = function(root, k) {
+    let n = 0;
+    let stack = [];
+    let curr = root;
+    while(curr || stack.length >0) {
+        while(curr) {
+            stack.push(curr);
+            curr = curr.left;
+        }
+        curr = stack.pop();
+        n+=1;
+        if(n===k) return curr.val;
+        curr = curr.right;
+    }
+}
