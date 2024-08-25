@@ -25,3 +25,19 @@ var isSymmetric = function(root) {
     }
     
 };
+
+var isSymmetricRecursive = function(root) {
+    if(root === null) return true;
+    let queue = [root.left, root.right];
+    while(queue.length > 0){
+        let leftNode = queue.shift();
+        let rightNode = queue.shift();
+
+        if(leftNode === null && rightNode === null) continue;
+        if(leftNode ===null || rightNode === null || leftNode.val !== rightNode.val) return false;
+
+        queue.push(leftNode.left,rightNode.right);
+        queue.push(leftNode.right, rightNode.left);
+    }
+    return true;
+}
