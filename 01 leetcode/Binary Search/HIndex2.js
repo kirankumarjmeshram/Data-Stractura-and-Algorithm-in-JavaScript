@@ -16,3 +16,13 @@ var hIndex = function(citations) {
     }
     return hindex;
 };
+
+var hIndex2 = function(citations) {
+    let n = citations.length;
+    for (let i = 0; i < n; i++) {
+        if (citations[i] >= n - i) {
+            return n - i;
+        }
+    }
+    return 0;
+};
