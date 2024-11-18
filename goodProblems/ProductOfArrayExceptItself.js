@@ -23,5 +23,21 @@ class Solution {
     }
    
 }
-console.log(productExceptSelf([10, 3, 5, 6, 2],5))
+
+function productExceptSelf2(arr,n){
+  // let n = arr.length;
+  let output = [];
+  let left = 1;
+  for(let i=0;i<n;i++){
+    output[i]= left;
+    left = left * arr[i]
+  }
+  let right = 1;
+  for(let i=n-1;i>=0;i--){
+    output[i] = output[i] * right;
+    right = right * arr[i]
+    }
+  return output
+}
+console.log(productExceptSelf2([10, 3, 5, 6, 2],5)) //[ 180, 600, 360, 300, 900 ]
 
