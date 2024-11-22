@@ -5,6 +5,26 @@
  * @param {number[]} cost
  * @return {number}
  */
+
+var canCompleteCircuit2 = function(gas, cost) {
+    let n = gas.length;
+    let total = 0;
+    let res = 0;
+    let gasSum = gas.reduce((a,b)=>a+b);
+    let costSum = cost.reduce((a,b)=>a+b)
+    if(gasSum < costSum) return -1
+    for(let i=0;i<n;i++){
+        total += gas[i]-cost[i];
+        if(total<0){
+            total = 0;
+            res = i + 1
+        }
+    }
+
+    return res;
+    
+};
+
 var canCompleteCircuit = function(gas, cost) {
     let n = gas.length;
     let totalGas = 0;
