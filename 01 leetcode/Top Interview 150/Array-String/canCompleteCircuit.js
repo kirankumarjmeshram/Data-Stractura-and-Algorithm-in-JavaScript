@@ -13,6 +13,7 @@ var canCompleteCircuit2 = function(gas, cost) {
     let gasSum = gas.reduce((a,b)=>a+b);
     let costSum = cost.reduce((a,b)=>a+b)
     if(gasSum < costSum) return -1
+
     for(let i=0;i<n;i++){
         total += gas[i]-cost[i];
         if(total<0){
