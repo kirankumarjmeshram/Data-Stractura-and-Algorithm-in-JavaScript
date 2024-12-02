@@ -18,3 +18,19 @@ var reverseWords = function(s) {
     }
     return str.join(" ")
 };
+
+/**
+ * @param {string} s
+ * @return {string}
+ */
+var reverseWordsSol2 = function(s) {
+    let n = s.length;
+    s = s.split(" ");
+    let res = [];
+    for(let i= n-1; i>=0;i--){
+        if(s[i]){
+            res.push(s[i]);
+        }
+    }
+    return res.join(" ");
+};
