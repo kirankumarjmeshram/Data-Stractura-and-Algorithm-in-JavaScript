@@ -16,3 +16,8 @@ var lengthOfLastWord = function(s) {
     }
     return length;
 };
+
+var lengthOfLastWordSol2 = function(s) {
+    s=s.trim().split(" ");
+    return s[s.length-1].length;
+};
