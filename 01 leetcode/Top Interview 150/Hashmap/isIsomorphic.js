@@ -12,15 +12,15 @@ var isIsomorphic = function(s, t) {
     if(n!==m) return false;
 
     for(let i=0;i<n;i++){
-        if(!sMap[s[i]]){
-            sMap[s[i]] =i
-        }
-        if(!tMap[t[i]]){
-            tMap[t[i]] =i
-        }
-        if(sMap[s[i]] !== tMap[t[i]]) {
+        let sChar = s[i];
+        let tChar = t[i];
+
+        if((sMap[sChar] && sMap[sChar] !== tChar) || (tMap[tChar] && tMap[tChar] !== sChar)) {
             return false;
         }
+        sMap[sChar] = tChar;
+        tMap[tChar] = sChar
+
     }
     return true;
 };
