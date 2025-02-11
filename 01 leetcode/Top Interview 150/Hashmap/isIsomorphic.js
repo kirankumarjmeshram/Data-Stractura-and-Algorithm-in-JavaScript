@@ -1,9 +1,5 @@
 // https://leetcode.com/problems/isomorphic-strings/description/?envType=study-plan-v2&envId=top-interview-150
-/**
- * @param {string} s
- * @param {string} t
- * @return {boolean}
- */
+
 var isIsomorphic = function(s, t) {
     let sMap = {};
     let tMap = {};
@@ -24,3 +20,6 @@ var isIsomorphic = function(s, t) {
     }
     return true;
 };
+
+console.log(isIsomorphic("egg", "add"))  // true
+console.log(isIsomorphic("foo", "bar")); // false
