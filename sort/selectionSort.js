@@ -22,3 +22,28 @@ function selectionSort(arr, start, N) {
     
     selectionSort(arr, start + 1, N)
 }
+
+// Another way to solve the problem 
+// iterative way
+function selectionSort2(arr) {
+    const n = arr.length;
+  
+    for (let i = 0; i < n - 1; i++) {
+      let minIndex = i;
+  
+      // Find the minimum element in the unsorted region
+      for (let j = i + 1; j < n; j++) {
+        if (arr[j] < arr[minIndex]) {
+          minIndex = j;
+        }
+      }
+  
+      // Swap the found minimum element with the first unsorted element
+      if (minIndex !== i) {
+        [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+      }
+    }
+  
+    return arr;
+  }
+  
