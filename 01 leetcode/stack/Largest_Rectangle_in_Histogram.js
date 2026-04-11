@@ -19,5 +19,24 @@ var largestRectangleArea = function(heights) {
     return maxArea;
 };
 
+function largestRectangleArea2(heights) {
+    let n = heights.length;
+    let maxArea = 0;
+
+    for(let i=0;i<n;i++) {
+        let h = heights[i];
+        let left = i, right = i;
+        while(left>=0 && heights[left]>=h) {
+            left--;
+        }
+        while(right<n && heights[right]>=h) {
+            right++;
+        }
+        maxArea = Math.max(maxArea, h*(right-left-1));
+    }
+    return maxArea;
+}
+
 console.log(largestRectangleArea([2,1,5,6,2,3]));//10
+console.log(largestRectangleArea2([2,1,5,6,2,3]));//10
 
