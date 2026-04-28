@@ -68,6 +68,32 @@ Constraints:
  */
 
 function doubleArr (arr){
-    return [...arr,...arr];
+    // return [...arr,...arr];
+    let n = arr.length;
+    for(let i=0;i<n;i++){
+        arr.push(arr[i])
+    }
+    return arr;
 }
-console.log(doubleArr([1,2,3,2,4]))
+console.log("Double Arr",doubleArr([1,2,3,2,4]))
+
+
+/**
+ * You are given a 0-indexed integer array nums and an integer k. Your task is to perform the
+following operation exactly k times in order to maximize your score:
+Select an element m from nums.
+Remove the selected element m from the array.
+Add a new element with a value of m + 1 to the array.
+Increase your score by m.
+Return the maximum score you can achieve after performing the operation exactly k times.
+
+Input: nums = [1,2,3,4,5], k = 3
+Output: 18
+Input: nums = [5,5,5], k = 2
+Output: 11
+
+Constraints:
+ 1 <= nums.length <= 100
+ 1 <= nums[i] <= 100
+ 1 <= k <= 100
+ */
