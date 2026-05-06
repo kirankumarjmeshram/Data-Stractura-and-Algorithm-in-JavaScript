@@ -16,3 +16,9 @@ var hasAlternatingBits = function(n) {
     }
     return true;
 };
+
+//using xor
+var hasAlternatingBitsXor = function(n) {
+    let x = n^(n>>1);
+    return !(x&(x+1));
+};
