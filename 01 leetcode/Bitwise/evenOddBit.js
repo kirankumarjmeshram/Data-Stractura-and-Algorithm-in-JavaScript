@@ -16,3 +16,22 @@ var evenOddBit = function(n) {
     }
     return ans;
 }
+
+var evenOddBitSol2 = function(n) {
+   
+    let ans = [0,0];
+    let bIdx = 0;
+    while(n){
+        if(n&1){
+            if(bIdx%2 === 0) {
+                ans[0]++
+            }else{
+                ans[1]++
+            }
+        }  
+        n = n>>1;
+        bIdx++;
+    }
+    return ans;
+}
+
