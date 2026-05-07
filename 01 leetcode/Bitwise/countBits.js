@@ -24,3 +24,15 @@ function countSetBit(num) {
         return count;
 }
 
+var countBitsSol2 = function(n) {
+    let ans = new Array(n+1).fill(0);
+    let offSet = 1;
+    for(let i=1;i<=n;i++) {
+        if (offSet*2 === i){
+            offSet = i;
+        }
+        ans[i] = 1 + ans[i-offSet]
+    }
+    
+    return ans;
+};
