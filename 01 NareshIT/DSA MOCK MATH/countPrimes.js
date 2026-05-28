@@ -18,3 +18,31 @@ function isPrime(num){
     }
     return true;
 }
+
+// Approach: Sieve of Eratosthenes
+// We create an array and initially assume all numbers are prime.
+// Start iterating from number 2, the first prime number.
+// If a number is still marked as prime, mark all its multiples as non-prime.
+// Multiples are not prime because they are divisible by the current number.
+// Start marking from i * i because smaller multiples were already processed.
+// Continue this process for all numbers till sqrt(n).
+// After marking, the numbers still marked true are prime numbers.
+// Finally, count all remaining prime numbers less than n.
+var countPrimes = function(n) {
+    let count = 0;
+    let isPrime = new Array(n).fill(true);
+    isPrime[0] = false;
+    isPrime[1] = false;
+    for(let i=2;i*i<n;i++){
+        if(isPrime[i]){
+            for(let j=i*i;j<n;j+=i) {
+                isPrime[j] = false
+            }
+        }
+    }
+    for(let i=0;i<n;i++){
+        if(isPrime[i]) count++;
+    }
+
+    return count;
+};
