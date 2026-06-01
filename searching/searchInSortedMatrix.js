@@ -1,3 +1,14 @@
+// Staircase Search
+// Intuition
+// Since each row is sorted left-to-right and each column is sorted top-to-bottom, we can search smartly instead of checking every cell.
+
+// Start at the top-right corner:
+
+// If the current value is greater than the target → move left (values decrease).
+// If it is smaller than the target → move down (values increase).
+// This works like walking down a staircase—each step eliminates an entire row or column.
+// We keep moving until we either find the target or move out of bounds.
+
 function searchInSortedMatrix(matrix, target) {
     let row = 0;
     let col = matrix[0].length-1;
