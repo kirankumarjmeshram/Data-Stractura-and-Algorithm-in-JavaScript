@@ -36,3 +36,5 @@ function searchForRange(array, target) {
     }
     return result;
   }
+
+  // Alternative solution same approach=> 01 NareshIT\Binary Search\searchRange.js
