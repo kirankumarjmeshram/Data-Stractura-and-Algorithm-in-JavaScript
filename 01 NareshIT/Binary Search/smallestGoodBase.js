@@ -1,10 +1,10 @@
 //https://leetcode.com/problems/smallest-good-base/description/
 /**
- * Smallest Good Base
- * Given an integer n represented as a string, 
- * return the smallest good base of n.
- * We call k >= 2 a good base of n, 
- * if all digits of n base k are 1's.
+  Smallest Good Base
+  Given an integer n represented as a string, 
+  return the smallest good base of n.
+  We call k >= 2 a good base of n, 
+  if all digits of n base k are 1's.
 
 1. If n is represented as all 1's in base k:
    n = 1 + k + k² + ... + k^m
