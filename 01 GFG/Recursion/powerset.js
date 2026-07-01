@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/subsets/
+
 class Solution 
 {
     //Function to return the lexicographically sorted power-set of the string.
@@ -16,4 +18,21 @@ class Solution
         this.subset(str, curr, i+1, ans);
         this.subset(str, curr+str[i], i+1, ans);
     }
+}
+
+//for arrays
+
+var subsets = function(nums) {
+    let subSets = [];
+    Helper(nums,subSets,[],0);
+    return subSets;
+};
+
+function Helper(nums,subSets,current,index) {
+    if(index===nums.length) {
+        subSets.push(current);
+        return;
+    }
+    Helper(nums,subSets,current,index+1);
+    Helper(nums,subSets,[...current, nums[index]],index+1)
 }
