@@ -1,3 +1,6 @@
+ tree /F /A | Out-File tree.txt
+
+
 class Abc {
     fun(){
         console.log("Fun!");
