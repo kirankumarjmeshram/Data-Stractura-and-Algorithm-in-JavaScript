@@ -51,6 +51,21 @@ class LinkedList {
 
     console.log("null");
   }
+
+  add(index, data) {
+    if(index === 0) {
+        this.addFirst(data);
+        return;
+    }
+    const newNode = new Node(data);
+    let curr = this.head;
+    for(let i=0;i<index-1;i++) {
+        curr = curr.next;
+    }
+    newNode.next =  curr.next;
+    curr.next = newNode;
+    this.size;
+  }
 }
 
 const list = new LinkedList();
