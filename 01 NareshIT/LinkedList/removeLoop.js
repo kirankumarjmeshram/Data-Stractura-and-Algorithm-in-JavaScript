@@ -1,3 +1,17 @@
+//https://www.geeksforgeeks.org/problems/remove-loop-in-linked-list/1
+// Find the start of the loop.
+// P = Distance from Head to Start of Loop.
+// C = Length of the Cycle.
+// X = Distance from Start of Loop to Meeting Point.
+// Slow = P + X
+// Fast = P + C + X
+// Since Fast = 2 × Slow:
+// 2(P + X) = P + C + X
+// P = C - X
+// Therefore, the distance from Head → Loop Start (P)
+// equals the distance from Meeting Point → Loop Start (C - X).
+// That's why resetting slow to head and moving both pointers
+// one step at a time makes them meet at the start of the loop.
 class Solution {
     removeLoop(head) {
         let slow = head;
@@ -33,7 +47,7 @@ class Solution {
         //     return;
         // }
 
-        // Step 2: Find the start of the loop
+        // Find the start of the loop
         // Both pointers move one step at a time.
         // They meet at the starting node of the loop.
         while (slow !== fast) {
@@ -41,7 +55,7 @@ class Solution {
             fast = fast.next;
         }
 
-        // Step 3: Find the last node of the loop
+        //  Find the last node of the loop
         // Traverse until fast.next points to the loop start.
         while (fast.next !== slow) {
             fast = fast.next;
