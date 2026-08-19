@@ -20,7 +20,7 @@ function bfsAdj(adj) {
         return ans;
 }
 
-console.log(bfsAdj("Output: ",AdjacencyMatrix))
+console.log("Output: ", bfsAdj(AdjacencyMatrix))
 
 //Output: [0, 2, 3, 1, 4]
 
@@ -33,7 +33,7 @@ const graph ={
     e:[],
     f:[]
 };
-
+//not for cyclic graph
 const bfs=(graph,source)=>{
     const queue =[source];
     let ans =[];
